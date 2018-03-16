@@ -1,29 +1,31 @@
-        .parallax {
-            background-image: url("../media/bg.jpg");
-            height: 400px;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            vertical-align:middle
-        }
-        .title-page {
-            font-family: 'Roboto' sans-serif;
-            text-transform: uppercase;
-            color: #ffffff;
-            font-weight: normal;
-            font-size: 55px;
-            line-height: 70px;
-            margin:0,5em;
-            text-align:center;
-        }
-        .subtitle-page {
-            font-family: 'Roboto' sans-serif;
-            text-transform: lowercase;
-            color: #ffffff;
-            font-size: 24px;
-            line-height: 30px;
-            text-align: center;
-        }
+.parallax {
+    background-image: url("../media/bg.jpg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    vertical-align: middle
+}
+
+.title-page {
+    font-family: 'Roboto' sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 70px;
+    margin: 0,5em;
+    text-align: center;
+}
+
+.subtitle-page {
+    font-family: 'Roboto' sans-serif;
+    text-transform: lowercase;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
