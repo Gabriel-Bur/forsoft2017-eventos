@@ -29,12 +29,13 @@
             <nav class="my-2 my-md-0 mr-md-3">
                 <a class="p-2 text-dark" href="index.html">Inicio</a>
                 <a class="p-2 text-dark" href="#">Sobre</a>
-                <button type="button"
+                <input type="button" 
+                        id="btnLogin"
                         class="btn btn-outline-primary"
                         data-toggle="modal"
-                        data-target="#loginModal">
-                    Login
-                </button>
+                        data-target="#loginModal"
+                        value="Login"/>
+                    
             </nav>
         </div>
         <!-- Header -->
@@ -62,8 +63,8 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Cadastrar</button>
-                        <button type="submit" class="btn btn-success">Login</button>
+                        <input type="button" class="btn btn-default" data-toggle="modal" data-target="#registerModal" data-dismiss="modal" value="Cadastrar"/>
+                        <input type="submit" class="btn btn-success" onclick="validar(this)" data-dismiss="modal" value="Login"/>
                     </div>
                 </div>
             </div>
@@ -260,5 +261,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/myjs.js"></script>
+	<script>
+			
+	</script>
+	
 </body>
 </html>
