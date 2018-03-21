@@ -12,6 +12,9 @@
 
     <title>Eventos</title>
 
+    <style>
+    </style>
+
 </head>
 <body>
 
@@ -103,39 +106,83 @@
             </div>
         </div>
         <!--Modal Register-->
+
+
         <!--Main-->
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-12 col-md-10 col-lg-8 col-xl-6">
-                <div class="card mb-3">
-                    <img class="img-fluid card-img-top" src="media/carnaval.jpg" alt="Imagem do evento">
-                    <div class="card-body">
-                        <h5 class="card-title">Carnaval do Forsoft</h5>
-                        <p class="card-text"><small class="text-muted">Infnet - Rj</small></p>
-                        <p class="card-text"><small class="text-muted">4 Fevereiro de 2019, 10h - 22h</small></p>
-                        <p class="card-text">Descrição</p>
-                        <p class="card-text">
-                            <small class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </small>
-                        </p>
-
-                        <p class="card-text">Local</p>
-                        <p class="card-text"><small class="text-muted"><strong>Infnet</strong></small></p>
-                        <p class="card-text"><small class="text-muted">Rua são jose, 90, Centro</small></p>
-                        <p class="card-text"><small class="text-muted">Rio de janeiro, RJ</small></p>
-
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeAJsJXheNQO0KJD_diqgMlzsskraiaeY&q=Infnet+Rio+de+janeiro" allowfullscreen></iframe>
-                        </div>
-
-                    </div>
-                </div>
+        <!--Nome do Evento-->
+        <div class="card">
+            <div class="card-header">Nome e imagem do evento</div>
+            <div class="card-body">
+                <form id="1">
+                    <label for="nome">Nome do evento</label>
+                    <input class="form-control form-control-lg" id="nome" type="text" required />
+                    <hr />
+                    <input class="form-control" id="bannerInput" type="file" />
+                    <p class="card-text"><small class="text-muted">selecione uma imagem de banner para seu evento.</small></p>
+                </form>
             </div>
-            <div class="col"></div>
         </div>
+        <br />
+        <!--Data-->
+        <div class="card">
+            <div class="card-header">Data</div>
+            <div class="card-body">
+                <form id="2">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="dataInicio">Início do evento</label>
+                            <input class="form-control" type="datetime-local" id="dataInicio" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="dataFim">Término do evento</label>
+                            <input class="form-control" type="datetime-local" id="dataFim" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br />
+        <!--Endereço-->
+        <div class="card">
+            <div class="card-header">Endereço</div>
+            <div class="card-body">
+                <form id="3">
+                    <label for="local">Local</label>
+                    <input class="form-control" type="text" id="Local" />
+                    <br />
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="cep">CEP</label>
+                            <input class="form-control" type="text" id="cep" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="numero">Numero</label>
+                            <input class="form-control" type="text" id="numero" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="bairro">Bairro</label>
+                            <input class="form-control" type="text" id="bairro" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="rua">Av/Rua</label>
+                            <input class="form-control" type="text" id="rua" />
+                        </div>
+                    </div>
+                    <label for="complemento">Complemento</label>
+                    <input class="form-control" type="text" id="complemento" placeholder="Sala B, Apt 102, Loja 14, etc" />
+                </form>
+            </div>
+            <div class="card-footer">
+                <button type="button" class="btn btn-danger">Limpar</button>
+                <button type="submit" class="btn btn-success">Salvar Evento</button>
+            </div>
+        </div>
+        <br />
+
+
+
         <!--Main-->
         <!-- Footer-->
         <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
@@ -214,6 +261,7 @@
 
         </footer>
         <!--/.Footer-->
+
     </div>
     <!--Conteiner-->
     <!-- Optional JavaScript -->

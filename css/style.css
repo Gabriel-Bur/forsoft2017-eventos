@@ -29,15 +29,15 @@
     line-height: 30px;
     text-align: center;
 }
-a:link {
+.card > a:link {
     color: black;
     text-decoration: none;
 }
-a:visited {
-    color:black;
-    text-decoration:none;
-    }
-a:active:visited {
+.card > a:visited {
+    color: black;
+    text-decoration: none;
+}
+.card > a:active:visited {
     color: black;
     text-decoration: none;
 }

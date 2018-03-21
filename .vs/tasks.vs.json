@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "tarefa-evento_create",
+      "appliesTo": "evento_create.html",
+      "type": "launch"
+    }
+  ]
+}
