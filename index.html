@@ -29,13 +29,19 @@
             <nav class="my-2 my-md-0 mr-md-3">
                 <a class="p-2 text-dark" href="index.html">Inicio</a>
                 <a class="p-2 text-dark" href="#">Sobre</a>
-                <input type="button" 
-                        id="btnLogin"
-                        class="btn btn-outline-primary"
-                        data-toggle="modal"
-                        data-target="#loginModal"
-                        value="Login"/>
-                    
+                <input type="button"
+                       id="btnLogin"
+                       class="btn btn-outline-primary"
+                       data-toggle="modal"
+                       data-target="#loginModal"
+                       value="Login" />
+                <input type="button"
+                       id="btnPerfil"
+                       class="btn btn-outline-primary"
+                       data-toggle="modal"
+                       data-target="#perfilModal"
+                       value="Perfil" hidden/>
+
             </nav>
         </div>
         <!-- Header -->
@@ -51,7 +57,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form id="form-login">
+                        <form id="form-login" method="post">
                             <div class="form-group">
                                 <label for="user-login" class="col-form-label">Usuário:</label>
                                 <input type="text" class="form-control" id="user-login" required>
@@ -60,12 +66,12 @@
                                 <label for="pass-login" class="col-form-label">Senha:</label>
                                 <input type="password" class="form-control" id="pass-login" required />
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <input type="button" class="btn btn-default" data-toggle="modal" data-target="#registerModal" data-dismiss="modal" value="Cadastrar"/>
-                        <input type="submit" class="btn btn-success" onclick="validar(this)" data-dismiss="modal" value="Login"/>
-                    </div>
+                            <div class="form-group">
+                                <input type="button" class="btn btn-default" data-toggle="modal" data-target="#registerModal" data-dismiss="modal" value="Cadastrar" />
+                                <input type="submit" class="btn btn-success" onclick="validar()" value="Login" />
+                            </div>
+                         </form>         
+                </div>
                 </div>
             </div>
         </div>
@@ -85,11 +91,11 @@
                         <form id="form-register">
                             <div class="form-group">
                                 <label for="user-register" class="col-form-label">Usuário:</label>
-                                <input type="text" class="form-control" id="user-register" placeholder="Endereço de E-mail" required/>
+                                <input type="text" class="form-control" id="user-register" placeholder="Endereço de E-mail" required />
                             </div>
                             <div class="form-group">
                                 <label for="user-register" class="col-form-label">CPF:</label>
-                                <input type="text" class="form-control" id="user-register" placeholder="XXXXXXXXX-XX" required/>
+                                <input type="text" class="form-control" id="user-register" placeholder="XXXXXXXXX-XX" required />
                             </div>
                             <div class="form-group">
                                 <label for="pass-register" class="col-form-label">Senha:</label>
@@ -99,12 +105,13 @@
                                 <label for="confirmpass-register" class="col-form-label">Confimar Senha:</label>
                                 <input type="password" class="form-control" id="confirmpass-register" required />
                             </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-success">Cadastrar</button>
+                            </div>
                         </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-success">Cadastrar</button>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -258,12 +265,15 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/myjs.js"></script>
 	<script>
-			
+
 	</script>
 	
 </body>

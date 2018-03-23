@@ -58,11 +58,11 @@
                                 <label for="pass-login" class="col-form-label">Senha:</label>
                                 <input type="password" class="form-control" id="pass-login" required />
                             </div>
+                            <div class="form-group">
+                                <input type="button" class="btn btn-default" data-toggle="modal" data-target="#registerModal" data-dismiss="modal" value="Cadastrar" />
+                                <input type="submit" class="btn btn-success" onclick="validar(this)" value="Login" />
+                            </div>
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Cadastrar</button>
-                        <button type="submit" class="btn btn-success">Login</button>
                     </div>
                 </div>
             </div>
@@ -96,22 +96,21 @@
                                 <label for="confirmpass-register" class="col-form-label">Confimar Senha:</label>
                                 <input type="password" class="form-control" id="confirmpass-register" required />
                             </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-success">Cadastrar</button>
+                            </div>
                         </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-success">Cadastrar</button>
-                    </div>
+
                 </div>
             </div>
         </div>
         <!--Modal Register-->
-
-
         <!--Main-->
         <!--Nome do Evento-->
         <div class="card">
-		
+
             <div class="card-header">Nome e imagem do evento</div>
             <div class="card-body">
                 <form id="1">
@@ -120,15 +119,15 @@
                     <hr />
                     <input class="form-control" id="bannerInput" type="file" />
                     <p class="card-text"><small class="text-muted">selecione uma imagem de banner para seu evento.</small></p>
-					<hr />
-					<label for="descricao">Descrição do evento:</label>
-					<textarea class="form-control" id="descricao" rows="4"></textarea>
-					
+                    <hr />
+                    <label for="descricao">Descrição do evento:</label>
+                    <textarea class="form-control" id="descricao" rows="4"></textarea>
+
                 </form>
             </div>
         </div>
         <br />
-		
+
         <!--Data-->
         <div class="card">
             <div class="card-header">Data</div>

@@ -55,11 +55,11 @@
                                 <label for="pass-login" class="col-form-label">Senha:</label>
                                 <input type="password" class="form-control" id="pass-login" required />
                             </div>
+                            <div class="form-group">
+                                <input type="button" class="btn btn-default" data-toggle="modal" data-target="#registerModal" data-dismiss="modal" value="Cadastrar" />
+                                <input type="submit" class="btn btn-success" onclick="validar(this)" value="Login" />
+                            </div>
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Cadastrar</button>
-                        <button type="submit" class="btn btn-success">Login</button>
                     </div>
                 </div>
             </div>
@@ -93,12 +93,13 @@
                                 <label for="confirmpass-register" class="col-form-label">Confimar Senha:</label>
                                 <input type="password" class="form-control" id="confirmpass-register" required />
                             </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-success">Cadastrar</button>
+                            </div>
                         </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-success">Cadastrar</button>
-                    </div>
+
                 </div>
             </div>
         </div>
